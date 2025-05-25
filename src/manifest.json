@@ -1,0 +1,15 @@
+{
+    "name": "Presouvani lidi",
+    "short_name": "Presouvani lidi",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "https://www.fastcr.cz/public/26/20/77/2939_9221_favicon.ico",
+        "sizes": "16x16",
+        "type": "image/x-icon"
+      }
+    ]
+  }

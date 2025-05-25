@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./admscripts:/var/www/adm
+      - ./db:/var/www/db
+      
+    restart: always
+
+    command: >
+      bash -c "chown -R www-data:www-data /var/www/db &&
+               apache2-foreground"
